@@ -1,0 +1,145 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[a4paper, left=3cm, right=3cm, top=3cm, bottom=3cm, headsep=10mm, footskip=12mm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[ngerman, english]{babel}    % mehrsprachiger Textsatz
+% babel: letzte Sprache in Optionen zeigt die Sprache des Dokumentes
+% und kann durch den Befehl \selectlanguage{} geaendert werden
+% Passen Sie die Optionen des babel-Paketes nach Bedarf an!
+\usepackage{float}
+\usepackage{graphicx}
+\usepackage{url}
+\usepackage{pdflscape}
+\usepackage{mathtools}
+\usepackage{amssymb, amsmath, amstext}
+\usepackage{amsthm}
+\usepackage{xcolor}
+\usepackage{nameref}
+\usepackage{siunitx}
+\usepackage{makecell}
+\usepackage{hyperref}
+\usepackage{enumitem}
+\usepackage[superscript,biblabel]{cite}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{tabularx} 			% Tabellen erzeugen
+\usepackage{multirow}			 % Zeilen in Tabellenbearbeitung
+\usepackage{multicol} 			% Spalten in Tabellenbearbeitung 
+\usepackage{lmodern}                        % Ersatz fuer Computer Modern-Schriften 
+\usepackage{amsmath}                                           % zum besseren Aussehen am Bildschirm
+\usepackage{booktabs} % für schönere Tabellen
+\usepackage{sidecap}
+\usepackage{rotating} % für die Landscape-Umgebung
+\usepackage{afterpage}
+\definecolor{Bluetitle}{HTML}{1F3864}
+\definecolor{softbluetitle}{HTML}{274D7E}
+\definecolor{Greyish}{HTML}{5A5A5A}
+\renewcommand{\refname}{Reference}
+\usepackage{array,multirow}
+\newcommand{\specialcell}[2][c]{%
+	\begin{tabular}[#1]{@{}c@{}}#2\end{tabular}}
+
+
+
+
+\begin{document}
+	
+	\begin{titlepage}
+		\begin{center}
+			\begin{figure}[h!tbp]
+				\includegraphics[width=\linewidth]{HUlogo.PNG}
+			\end{figure}
+			\vspace*{2 cm}
+			
+			\textcolor{Bluetitle}{\textbf{\huge Hormone und Blütenentwicklung am Arabidopsis thalinana}}\par
+			\vspace*{0.5cm}
+			\textcolor{softbluetitle}{\textbf{\Large Untersuchung von Auxin- und Cytokininaktivität in der Pflanzenentwicklung und der Einfluss von ABC-Genen in der Blütenentwicklung im Modell Arabidopsis thalinana}}\par
+			
+			\vspace*{2cm}
+			
+			\textcolor{Greyish}{\textbf{Versuchsdurchführende}}\par
+			\textcolor{Greyish}{Oscar Moore (634083)}\par
+			\textcolor{Greyish}{Fridolin Rehning (625757)}\par
+			\textcolor{Greyish}{Philipp Kunze (625468)}\par
+			\textcolor{Greyish}{Daniel Kollenkirchen (625426)}\par
+			\textcolor{Greyish}{Huyen Anh Nguyen (572309)}\par
+			
+			\vspace*{0.5cm}
+			\textcolor{Greyish}{\textbf{Versuchsort}}\par
+			\textcolor{Greyish}{Campus Nord, Haus 9}\par
+			\textcolor{Greyish}{R2006}\par
+			\vspace*{0.5cm}
+			\textcolor{Greyish}{\textbf{Versuchsbetreuer}}\par
+			\textcolor{Greyish}{Dr. Cezary Smaczniak}\par
+			
+			\vspace*{2 cm}
+			
+			\textcolor{Greyish}{18. Juni 2024}\par
+			
+			
+			
+			
+		\end{center}
+	\end{titlepage}
+	
+	\tableofcontents
+	
+	
+	
+	\newpage
+	\section{Einführung}	
+	
+	\section{Material und Methode}
+	\subsection{Histochemische Färbung der Auxin- und Cytokininaktivität}
+	\subsection{morphologische Beurteilung der Mutation anhand der Blütenbildung}
+	
+	\section{Ergebnis}
+	
+	\subsection{Auxin- und Cytokininaktivität}
+		\subsubsection{Auxinaktivität}
+		\subsubsection{cytokininaktivität}
+	
+	\subsection{Phänotypische Analyse der Blüte}
+	
+		\begin{figure}[!tbp]
+			\centering
+			\begin{subfigure}[b]{0.45\textwidth}
+				\includegraphics[width=\textwidth]{1_O+A.jpg}
+				\caption{Mutant 1}
+				\label{fig:f1}
+			\end{subfigure}
+			\hfill
+			\begin{subfigure}[b]{0.45\textwidth}
+				\includegraphics[width=\textwidth]{2_O+A(1).jpg}
+				\caption{Mutant 2.}
+				\label{fig:f2}
+			\end{subfigure}
+			\hfill
+			\begin{subfigure}[b]{0.45\textwidth}
+				\includegraphics[width=\textwidth]{3_O+A(MU).jpg}
+				\caption{Mutant 3.}
+				\label{fig:f3}
+			\end{subfigure}
+			\hfill
+			\begin{subfigure}[b]{0.45\textwidth}
+				\includegraphics[width=\textwidth]{4_O+A(MU).jpg}
+				\caption{Mutant 4.}
+				\label{fig:f4}
+			\end{subfigure}
+			\hfill
+			\begin{subfigure}[b]{0.45\textwidth}
+				\centering
+				\includegraphics[width=\textwidth]{5_O+A(MU).jpg}
+				\caption{Mutant 5.}
+				\label{fig:f5}
+			\end{subfigure}
+			\caption{My flowers.}
+		\end{figure}
+
+	\section{Diskussion}
+
+	\section{Anhang}
+
+	
+
+	
+\end{document}
