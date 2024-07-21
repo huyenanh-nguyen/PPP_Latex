@@ -95,48 +95,54 @@
 
 	
 	\section{Material und Methode}
-	Es wurde wie im Skript beschrieben verfahren, lediglich für den zweiten Versuchsteil wurden beim Erstellen der Hefelösung, 0,52g Hefe und 2,01g Glukose abgewogen. Beim ansetzen der Pflanzenzellsuspension, wurden 1,51g Glukose und 5,25g der BY2-Pflanzenzellkulturen verwendet.
+	
+	
+	Es wurde größtenteils, wie im Skript beschrieben verfahren. Bei Versuchsteil 1a wurden die Glucosekonzentration nach 10 Minuten gemessen und alle 5 Minuten bis Minute 25 gemessen. Zudem wurde 54g Hefe anstelle von 12.5g eingewogen.\\
+	Für den zweiten Versuchsteil wurden beim Erstellen der Hefelösung, 0.52g Hefe und 2.01g Glucose abgewogen. Beim Ansetzen der Pflanzenzellsuspension, wurden 1.51g Glucose und 5.25g der BY2-Pflanzenzellkulturen verwendet.
 	
 	\section{Ergebnis}
-	\subsection{Aerobe und anaerobe Glucoseverbrauch}
-	Es wurde 1.8g Glucose in 250mL Medium gelöst, welches eine Anfangskonzentration von 40mM ergibt.\\
-	
+		\subsection{Aerobe und anaerobe Glucoseverbrauch}
+			Die Konzentration von Glucose aus der Einwaage wurde nach der Gleichung (\ref{eq:Einwaage_Glucose}) berechnet.\\
+			
+			\begin{equation}\label{eq:Einwaage_Glucose}
+				c(Glucose) = \frac{\frac{m(Glucose)}{M(Glucose)}}{V(Medium)} = \frac{\frac{1.8 g}{180 g/mol}}{0.25L} = 0.04 mol/L \quad\widehat{=} \quad 40 mmol/L
+			\end{equation}
+			
+			Da bei der Durchführung der Glucosebestimmung nicht sofort der Farbwert des Teststreifen abgelesen wurde, sind die ersten zwei Werte nicht genau.\\
+			Der Glucoseverbrauch wird somit mit der Anfangskonzentration der Einwaage bestimmt und mit dem 25 Minuten Wert der Teststreifen (siehe Figure \ref{fig: Glucoseverbrauch}) berechnet.
+		
+			\begin{figure}[H]
+				\centering
+				\includegraphics[width=0.8\textwidth]{Teststreifen.png}
+				\caption{Glucose-Teststreifen nach 10, 15, 20, 25 Minuten in der Backhefe-Lösung bei aerobe und anaerobe Bedingungen.}
+				\label{fig: Glucoseverbrauch}
+			\end{figure}
+		
+			Es wird angenommen, dass der Verbrauch linear verläuft, weswegen der Glucoseverbrauch aus der Differenz des Anfangswertes und Endwertes der Glucose bestimmt werden kann.\\
+			Der Verbrauch pro Frischgewichtes in Gleichung () bezieht sich auf 50.4g Backhefe, die für den Versuch eingewogen wurde.
+			
+			\subsubsection{aerobe Glucoseverbrauch}
+			\begin{equation}\label{fig:VERBRAUCH_Glucose}
+				\begin{split}
+				\Delta c = c_{Glucose, 0} - c_{Glucose , 1}\\
+				\end{split}
+			\end{equation}
+		
 		\begin{table}[H]
-		\centering
-		\caption{Glucosekonzentration im Medium von Backhefe in aerobe und Anaerobe Bedingungen. Die Konzentration wurde vom Skala in Figure \ref{fig: Glucoseverbrauch} abgelesen.}
-		\label{tab:glucoseconc anareob und aerob}
-		\begin{tabular}{ccc}
-			\toprule
-			\multirow{2}{*}{t in min} & \specialcell[t]{c(Glucose) bei \\ aerobe Bedingung in mM}& \specialcell[t]{c(Glucose) bei \\anaerobe Bedingung in mM}\\
-			\midrule
-			10 & 111 & 55\\
-			15 & 55 & 28\\
-			20 & 14 & <14\\
-			25 & 5.5 & 0\\
-			\bottomrule
-		\end{tabular}
-	\end{table}	
-	Der Glucoseverbrauch in Table \ref{tab:Glucoseverbrauch} wurde nach Gleichung (\ref{eq: Glucoseverbrauch}) bestimmt. \\
-	Die letzte Konzentration wurde bei t = 25 Minuten bestimmt.
-	\begin{equation}\label{eq: Glucoseverbrauch}
-		\Delta c(Glucose) = c_0(Glucose) - c_{end}(Glucose)
-	\end{equation}
-	
-	\begin{table}[H]
-		\centering
-		\caption{Glucoseverbrauch von Backhefe bei aerobe und anaerobe Bedingungen nach 25 Minuten.}
-		\label{tab:Glucoseverbrauch}
-		\begin{tabular}{ccc}
-			\toprule
-			& $\Delta$c(Glucose) & Glucoseverbrauch pro 1g Hefe\\
-			\midrule
-			aerobe Bedingung & 1.38 mM/ min & 6.39 mmol/ min g Hefe\\
-			anaerobe Bedingung & 1.60 mM/min & 7.41 mmol/min g Hefe\\
-			\bottomrule
-		\end{tabular}
-	\end{table}	
-	
-	\subsection{Anaerobe Gährung}
+			\centering
+			\caption{Glucoseverbrauch von Backhefe bei aerobe und anaerobe Bedingungen nach 25 Minuten.}
+			\label{tab:Glucoseverbrauch}
+			\begin{tabular}{ccc}
+				\toprule
+				& $\Delta$c(Glucose) & Glucoseverbrauch pro 1g Hefe\\
+				\midrule
+				aerobe Bedingung & 1.38 mM/ min & 6.39 mmol/ min g Hefe\\
+				anaerobe Bedingung & 1.60 mM/min & 7.41 mmol/min g Hefe\\
+				\bottomrule
+			\end{tabular}
+		\end{table}	
+		
+	\subsection{Anaerobe Gärung}
 	Die wiederholte Messung des Gewichts im Abstand von 10 min sowie die daraus resultierende Abnahme der Stoffmenge von Glukose (siehe Gleichung \ref{eq:anareobeglucoseverbrauch}) wurde in Table \ref{tab:anaerobe glucoseverbrauch} dargestellt. Die Abnahme der Stoffmenge der Glukose je Gramm Hefe konnte einfach abgeleitet worden, da genau 1 Gramm Hefe genutzt wurde. Aus diesem Wert konnte ein Diagramm im zeitlichen Verlauf erstellt werden (siehe Figure \ref{fig:wurzel ohne P}). Es zeigte sich, dass die ersten zwei Messpunkte (nach 0 und 12 min) nicht in den Verlauf des Verbrauchs passte. Aber auch der Messwert nach 52 min weicht von dem restlichen Verlauf ab. Es wurde mittels einer linearen Regression durch die Messpunkte ab Messpunkt 3 (22 min) der durchschnittliche Glukoseverbrauch ermittelt. Dabei entspricht der Anstieg der linearen Regressionsgeraden dem Verbrauch. Dementsprechend konnte ein Glukoseverbrauch von 0,1686 mmol Glukose pro Minute und Gramm Hefe festgestellt werden. Der Bestimmtheitsgrad der linearen Regression liegt bei R² = 0,97.
 	
 	\begin{table}[H]
@@ -171,23 +177,77 @@
 	\end{figure}
 	
 	\subsection{Sauerstoffverbrauch und cyanidresistente Atmung}
-	Der Verbrauch von Sauerstoff wird aus der Steigung im linearen Bereich in Figure \ref{fig: Sauerstoffverbrauch} bestimmt. 
+		Der Sauerstoffverbrauch wird aus der Steigung a (a: Verbrauch)  in dem Linearen Bereich der Kurve in Figure (\ref{fig: Sauerstoffverbrauch}) bestimmt. Eine Beispielrechnung für den Sauerstoffverbrauch pro g Hefe wurde in Gleichung (\ref{eq: Sauerstoffverbrauch}) für die Hefe ohne KCN durchgeführt.\\
+		Aus der Sauerstoffverbrauch wird der Glucoseverbrauch bestimmt. In Gleichung (\ref{eq: Glucoseverbrauch}) ist eine Beispielrechnung für den Glucoseverbrauch von Hefe ohne KCN dargestellt.\\
+		In Table \ref{tab:O2verbrauch und CN} wurden die Verbrauchsrate von Hefe und BY2-Zellen mit und ohne KCN dargestellt. 
+		
+		\begin{equation}\label{eq: Sauerstoffverbrauch}
+			\begin{split}
+				a(O_2)  &= 0.00089 \frac{mg}{L \cdot s} \quad\widehat{=} \quad 0.534 \frac{mg}{L \cdot min} \quad\widehat{=} \quad 534 \frac{\mu g}{L \cdot min}\\		
+				\\
+				\frac{a(O_2) }{\beta(Hefe)} &= \frac{534 \mu g/L \cdot min}{\frac{0.52 g}{0.3 L}} = \underline{308 \mu g/g(Frischgewicht)\cdot min}\\
+			\end{split}
+		\end{equation}
+		\\
+		\\
+		\begin{equation}\label{eq: Glucoseverbrauch}
+			\begin{split}
+				a(O_2) &= 0.0089 \frac{mg}{L \cdot s} \quad\widehat{=} \quad 0.534 \frac{mg}{L \cdot min} \quad\widehat{=} \quad 534 \frac{\mu g}{L \cdot min}\\		
+				a(Glucose) &= \frac{\frac{a(O_2) }{M(O_2)}}{6} = \frac{\frac{0.534 \cdot 10^{-3} g/ L \cdot min}{15.99 g/mol}}{6} = 5.566 \cdot 10^{-6} mol/ L \cdot min \\	
+				\\
+				\frac{a(Glucose) }{\beta(Hefe)} &= \frac{5.566 \cdot 10^{-6} mol/ L \cdot min}{\frac{0.52 g}{0.3 L}} = 3.21 \cdot 10 ^{-6} mol/g(Frischgewicht) \cdot min \\
+				&\widehat{=} \underline{3.21 \cdot 10^{-3} mmol/g(Frischgewicht) \cdot min}\\
+			\end{split}
+		\end{equation}
+	
+
 		\begin{table}[H]
-		\centering
-		\caption{Sauerstoff- und Glucoseverbrauch von Backhefe und BY2-Pflanzenzellen in anaeroben Bedingungen mit und ohne Zugabe von Kaliumcyanid.}
-		\label{tab:O2verbrauch und CN}
-		\begin{tabular}{ccc}
-			\toprule
-			& $O_2$-Verbrauch in $\mu$g/min g Cells& Glucose-Verbrauch in mmol/ min g Cells\\
-			\midrule
-			Hefe ohne KCN & 311.4 & 3.244 $\cdot$ 10$^{-3}$\\
-			Hefe mit KCN & 54.42& 5.669 $\cdot$ 10$^{-4}$\\
-			& & \\
-			BY2 ohne KCN & 2.753 & 2.868 $\cdot$ 10$^{-5}$\\
-			BY2 mit KCN & 3.796& 3.954 $\cdot$ 10$^{-5}$\\
-			\bottomrule
-		\end{tabular}
-	\end{table}	
+			\centering
+			\caption{Sauerstoff- und Glucoseverbrauch von Backhefe und BY2-Pflanzenzellen in aeroben Bedingungen mit und ohne Zugabe von Kaliumcyanid.}
+			\label{tab:O2verbrauch und CN}
+			\begin{tabular}{cccc}
+				\toprule
+				&  $O_2$-Verbrauch in & $O_2$-Verbrauch in& Glucose-Verbrauch in\\
+				& $\mu$g/L min & $\mu$g/min g Cells &  mmol/ min g Cells\\
+				\midrule
+				Hefe ohne KCN & 534 & 308 & 3.21 $\cdot 10 ^{-3}$\\
+				Hefe mit KCN & 90& 51.9 & 3.12 $\cdot 10 ^{-4}$\\
+				& & &\\
+				BY2 ohne KCN & 96 & 5.49 & 5.72 $\cdot 10 ^{-5}$\\
+				BY2 mit KCN & 132& 7.5 & 4.72 $\cdot$ 10$^{-4}$\\
+				\bottomrule
+			\end{tabular}
+		\end{table}		
+	
+			\begin{figure}[H]
+				\centering
+				\begin{subfigure}[b]{0.6\textwidth}
+					\includegraphics[width=\textwidth]{O2hefeohneKCN.png}
+					\caption{Backhefe ohne KCN}
+					\label{fig:hefeohneKCN}
+				\end{subfigure}
+				\hfill
+				\begin{subfigure}[b]{0.6\textwidth}
+					\includegraphics[width=\textwidth]{O2hefemitKCN.png}
+					\caption{Backhefe mit KCN}
+					\label{fig:hefemitKCN}
+				\end{subfigure}
+				\begin{subfigure}[b]{0.6\textwidth}
+					\includegraphics[width=\textwidth]{O2BY2ohneKCN.png}
+					\caption{BY2-Zellen ohne KCN}
+					\label{fig:BY2ohneKCN}
+				\end{subfigure}
+				\hfill
+				\begin{subfigure}[b]{0.6\textwidth}
+					\includegraphics[width=\textwidth]{O2BY2mitKCN.png}
+					\caption{BY2-Zellen mit KCN}
+					\label{fig:BY2mitKCN}
+				\end{subfigure}
+				\caption{Sauerstoffkonzentration im Medium von Backhefe bzw BY2-Pflanzenzellen in Abhängigkeit der Zeit in Sekunden. Sauerstoffkonzentration wurde in anaerobe Bedingung bestimmt und einmal mit und ohne Zugabe von 2.4mL KCN.}
+				\label{fig: Sauerstoffverbrauch}
+			\end{figure}
+		
+
 	
 	\section{Diskussion}
 	\subsection{Backhefe bei aerobe und anerobe Bedingungen}
@@ -215,43 +275,21 @@
 
 		
 	\subsection{Sauerstoffverbrauch und cyanidresistende Atmung}
-	Der Glucoseverbrauch im Medium ist bei der Backhefe deutlich höher als bei der Pflanzenzelle BY2. Anders als die Hefe besitzen Pflanzenzellen ein hohen Glucosespeicher in den Vakuole, welches für die Atmungskette verwendet werden kann. Der niedrige Sauerstoffverbrauch bei den  Pflanzen liegt an der Diffusionsrate von Sauerstoff in der Flüssigkeit durch die Zellwand. \\
-	Die Hefezellen verbrauchen innerhalb von 13 Minuten das ganze Sauerstoff in der Lösung. Der Glucoseverbrauch ist hier aber nicht Vergleichbar mit der Gärung in Aufgabe 1, da hier nur der Sauerstoffverbrauch bestimmt wurde und aus dem Sauerstoffverbrauch der Glucoseverbrauch bestimmt wurde. Somit kann der Glucoseverbrauch nur auf einem aeroben Stoffwechsel zurück geführt werden.\\
-	Die Zugabe von Kaliumcyanid hemmt die Sauerstoffaufnahme bei der Backhefe. Der Sauerstoffverbrauch hat sich innerhalb von 7 Minuten bei der gehemmten Backhefte kaum geändert (siehe Table \ref{tab:O2verbrauch und CN}). Dies liegt daran, dass die Cyanid-Ionen an die Oxidase bindet und somit den Stoffwechsel in der Backhefe inhibiert. BY2-Zellen gehöhrt zu den höher entwickelten Pflanzenzellen, die einen alternative Oxidase besitzt. Wenn das Enzym von Cytochromoxidase bindet, gibt es noch eine andere Alternative, Sauerstoff zu oxidieren. \\
+	Der Glucoseverbrauch im Medium ist bei der Backhefe deutlich höher als bei der Pflanzenzelle BY2. Die Verbrauchsrate von ungehemmte Hefe beträgt 534 $\mu$g/L $\cdot$ min und die von BY2-Zellen 96 $\mu$g/L $\cdot$ min. Anders als die Hefe besitzen Pflanzenzellen Vakuolen, die 80-90$\%$ der Zelle ausmachen, wodurch für anderen Zellorgane . Somit besitzen Pflanzenzellen weniger Mitochondrien als die Hefezellen und können pro g weniger Sauerstoff verstoffwechseln.\\
+	\\
+	Wird Kalciumcyanid (KCN) zugegeben, dann ist der Sauerstoffverbrauch von Hefe auf 90 $\mu$g/L $\cdot$ min gesunken und die von BY2- Zelle auf 132 $\mu$g/L $\cdot$ min gestiegen.\\
+	In den Mitochondrien ist Cytochrom-C-Oxidase ein Enzym das in der Atmungskette bei der Elektronentransport beteiligt ist. Cyanid bindet an die Oxidase und inhibiert somit die ATP-Gewinnung durch die aerobe Atmung.
+	Die Hefezelle musst dann von der aerobe Atmung auf die anaerobe Gärung wechseln, um die Energiegewinnung aufrecht zu erhalten. Das die Hefezelle in der Lage ist auch bei anaerobe Bedingung Glucose zu verstoffwechseln, kann im Versuchsteil 1 beobachtet werden. Hier im Versuchsteil 2 ist dies nicht möglich, da das Messinstrument (Clark-Elektrode) nur den Sauerstoffgehalt in der Lösung messen kann.\\
+	Im Versuchsteil 1 wurde der Glucosegehalt in der Lösung mithilfe von Diastix-Teststreifen, welches ein Konzentrations-Farbindikator für Glucose ist, gemessen. Dadurch ist es möglich die aerobe Atmung und anaerobe Gärung zu testen, was hier in diesen Versuchsteil 2 nicht möglich ist, da die Clark-Elektrode nur den aeroben Stoffwechselweg quantifizieren kann.\\
+	Der Nachteil der Diastix-Teststreifen jedoch ist, dass das zeitliche Abschätzen der Farbveranderung mit dem Farbskala auf der Verpackung bei jede Probetestung gleich sein muss und zeitnah passieren muss, da die Enzym in den Teststreifen nachdunkeln und somit die Werte verfälschen.\\
+	Bei der Zugabe von KCN zu den Hefeproben wäre die Teststreifen aber ein Vorteil, da es den anaeroben Stoffwechselweg der Hefezellen zeigen würde.\\
+	\\
+	BY2-Zellen gehört zu den höheren Pflanzen (Zellen von der Nicotiana tobacum Pflanze) und besitzen eine alternative Oxidase-Weg, welches nicht durch Cyanid gehemmt werden kann, um ATP zu synthetisieren. So ist den Pflanzen auch bei einer Inhibition von Cytochrom-C-Oxidase ATP zu produzieren.\\
 	Da bei der alternative Oxidase -Stoffwechselweg weniger ATP produziert, musst die Pflanzenzelle mehr Sauerstoff verbrauchen, um die gleiche ATP-Produktion in der Zelle aufrecht zu halten.\\
 	
 	\section{Anhang}
 	\subsection{Rohdaten}
-	\subsubsection{Glucoseteststreifen}
-		\begin{figure}[H]
-		\centering
-		\begin{subfigure}[b]{0.4\textwidth}
-			\includegraphics[width=\textwidth]{PHOTO-2024-07-04-23-51-30.jpg}
-			\caption{10 Minuten}
-			\label{fig:10min}
-		\end{subfigure}
-		\hfill
-		\begin{subfigure}[b]{0.4\textwidth}
-			\includegraphics[width=\textwidth]{PHOTO-2024-07-04-23-51-29 2.jpg}
-			\caption{15 Minuten}
-			\label{fig:15 min}
-		\end{subfigure}
-		\begin{subfigure}[b]{0.4\textwidth}
-			\includegraphics[width=\textwidth]{PHOTO-2024-07-04-23-51-28 2.jpg}
-			\caption{20 Minuten}
-			\label{fig:20 min}
-		\end{subfigure}
-		\hfill
-		\begin{subfigure}[b]{0.4\textwidth}
-			\includegraphics[width=\textwidth]{PHOTO-2024-07-04-23-51-29.jpg}
-			\caption{25 Minuten}
-			\label{fig:25 min}
-		\end{subfigure}
-		\caption{Teststreifen nach 10, 15, 20, 25 Minuten in den Backhefe-Lösung bei aerobe und anaerobe Bedingungen.}
-		\label{fig: Glucoseverbrauch}
-	\end{figure}
 	
-	\subsubsection{Sauerstoffkonzentrationsmessung}		
 	\begin{table}[H]
 		\centering
 		\caption{Sauerstoffkonzentration von 0.52g Backhefe in einer anaeroben Bedingung.}
@@ -357,35 +395,6 @@
 			\bottomrule
 		\end{tabular}
 	\end{table}	
-	\subsubsection{Graphische Darstellung Sauerstoffverbrauch}
-	
-		\begin{figure}[H]
-		\centering
-		\begin{subfigure}[b]{0.5\textwidth}
-			\includegraphics[width=\textwidth]{O2hefeohneKCN.png}
-			\caption{Backhefe ohne KCN}
-			\label{fig:hefeohneKCN}
-		\end{subfigure}
-		\hfill
-		\begin{subfigure}[b]{0.5\textwidth}
-			\includegraphics[width=\textwidth]{O2hefemitKCN.png}
-			\caption{Backhefe mit KCN}
-			\label{fig:hefemitKCN}
-		\end{subfigure}
-		\begin{subfigure}[b]{0.5\textwidth}
-			\includegraphics[width=\textwidth]{O2BY2ohneKCN.png}
-			\caption{BY2-Zellen ohne KCN}
-			\label{fig:BY2ohneKCN}
-		\end{subfigure}
-		\hfill
-		\begin{subfigure}[b]{0.5\textwidth}
-			\includegraphics[width=\textwidth]{O2BY2mitKCN.png}
-			\caption{BY2-Zellen mit KCN}
-			\label{fig:BY2mitKCN}
-		\end{subfigure}
-		\caption{Sauerstoffkonzentration im Medium von Backhefe bzw BY2-Pflanzenzellen in Abhängigkeit der Zein in Sekunden. Sauerstoffkonzentration wurde in anaerobe Bedingung bestimmt und einmal mit und ohne Zugabe von 2.4mL KCN.}
-		\label{fig: Sauerstoffverbrauch}
-	\end{figure}
 	
 	
 \end{document}
