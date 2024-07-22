@@ -101,13 +101,14 @@
 	Für den zweiten Versuchsteil wurden beim Erstellen der Hefelösung, 0.52g Hefe und 2.01g Glucose abgewogen. Beim Ansetzen der Pflanzenzellsuspension, wurden 1.51g Glucose und 5.25g der BY2-Pflanzenzellkulturen verwendet.
 	
 	\section{Ergebnis}
-		\subsection{Aerobe und anaerobe Glucoseverbrauch}
+		\subsection{Komplexe Atmung und Gährung}
+			\subsubsection{Glucoseverbrauch bei aerobe und aerobe Bedingung}
 			Die Konzentration von Glucose aus der Einwaage wurde nach der Gleichung (\ref{eq:Einwaage_Glucose}) berechnet.\\
 			
 			\begin{equation}\label{eq:Einwaage_Glucose}
 				c(Glucose) = \frac{\frac{m(Glucose)}{M(Glucose)}}{V(Medium)} = \frac{\frac{1.8 g}{180 g/mol}}{0.25L} = 0.04 mol/L \quad\widehat{=} \quad 40 mmol/L
 			\end{equation}
-			
+			\\
 			Da bei der Durchführung der Glucosebestimmung nicht sofort der Farbwert des Teststreifen abgelesen wurde, sind die ersten zwei Werte nicht genau.\\
 			Der Glucoseverbrauch wird somit mit der Anfangskonzentration der Einwaage bestimmt und mit dem 25 Minuten Wert der Teststreifen (siehe Figure \ref{fig: Glucoseverbrauch}) berechnet.
 		
@@ -118,31 +119,35 @@
 				\label{fig: Glucoseverbrauch}
 			\end{figure}
 		
-			Es wird angenommen, dass der Verbrauch linear verläuft, weswegen der Glucoseverbrauch aus der Differenz des Anfangswertes und Endwertes der Glucose bestimmt werden kann.\\
-			Der Verbrauch pro Frischgewichtes in Gleichung () bezieht sich auf 50.4g Backhefe, die für den Versuch eingewogen wurde.
-			
-			\subsubsection{aerobe Glucoseverbrauch}
-			\begin{equation}\label{fig:VERBRAUCH_Glucose}
+			Es wird angenommen, dass der Verbrauch a linear verläuft, weswegen der Glucoseverbrauch aus der Differenz des Anfangswertes und Endwertes der Glucose bestimmt werden kann.\\
+			Der Verbrauch pro Frischgewichtes in Gleichung (\ref{eq:VERBRAUCH_Glucose}) bezieht sich auf 50.4g Backhefe, die für den Versuch eingewogen wurde.
+		
+			\begin{equation}\label{eq:VERBRAUCH_Glucose}
 				\begin{split}
-				\Delta c = c_{Glucose, 0} - c_{Glucose , 1}\\
+					\Delta c &= c_{Glucose, 0} - c_{Glucose , 1}\\
+					\Delta c(aerob) &= 40 mM - 5.5 mM = 34.5 mM\\
+					\\
+					a(aerob) &=	\frac{\Delta c(aerob)}{\frac{m(Hefe)}{V(Hefelösung)} \cdot t_{ges}} = \frac{34.5 mmol/L}{\frac{54g}{0.25L} \cdot 25 min} \\
+					\\
+					&= \underline{0.0064 mmol/ g \cdot min}\\
 				\end{split}
 			\end{equation}
 		
 		\begin{table}[H]
 			\centering
-			\caption{Glucoseverbrauch von Backhefe bei aerobe und anaerobe Bedingungen nach 25 Minuten.}
+			\caption{Glucoseverbrauch a von Backhefe bei aerobe und anaerobe Bedingungen nach 25 Minuten.}
 			\label{tab:Glucoseverbrauch}
 			\begin{tabular}{ccc}
 				\toprule
-				& $\Delta$c(Glucose) & Glucoseverbrauch pro 1g Hefe\\
+				& $\Delta$c(Glucose) in mM& a in $mmol/ g \cdot min$\\
 				\midrule
-				aerobe Bedingung & 1.38 mM/ min & 6.39 mmol/ min g Hefe\\
-				anaerobe Bedingung & 1.60 mM/min & 7.41 mmol/min g Hefe\\
+				aerobe Bedingung & 34.5 & 0.0064\\
+				anaerobe Bedingung & 40 & 0.0074\\
 				\bottomrule
 			\end{tabular}
 		\end{table}	
 		
-	\subsection{Anaerobe Gärung}
+	\subsubsection{Anaerobe Gärung}
 	Die wiederholte Messung des Gewichts im Abstand von 10 min sowie die daraus resultierende Abnahme der Stoffmenge von Glukose (siehe Gleichung \ref{eq:anareobeglucoseverbrauch}) wurde in Table \ref{tab:anaerobe glucoseverbrauch} dargestellt. Die Abnahme der Stoffmenge der Glukose je Gramm Hefe konnte einfach abgeleitet worden, da genau 1 Gramm Hefe genutzt wurde. Aus diesem Wert konnte ein Diagramm im zeitlichen Verlauf erstellt werden (siehe Figure \ref{fig:wurzel ohne P}). Es zeigte sich, dass die ersten zwei Messpunkte (nach 0 und 12 min) nicht in den Verlauf des Verbrauchs passte. Aber auch der Messwert nach 52 min weicht von dem restlichen Verlauf ab. Es wurde mittels einer linearen Regression durch die Messpunkte ab Messpunkt 3 (22 min) der durchschnittliche Glukoseverbrauch ermittelt. Dabei entspricht der Anstieg der linearen Regressionsgeraden dem Verbrauch. Dementsprechend konnte ein Glukoseverbrauch von 0,1686 mmol Glukose pro Minute und Gramm Hefe festgestellt werden. Der Bestimmtheitsgrad der linearen Regression liegt bei R² = 0,97.
 	
 	\begin{table}[H]
@@ -251,9 +256,8 @@
 	
 	\section{Diskussion}
 	\subsection{Backhefe bei aerobe und anerobe Bedingungen}
-		Wie in Table \ref{tab:Glucoseverbrauch} zu sehen, verbraucht Hefe unter anaeroben Bedingungen mehr Glukose als die unter aeroben Bedingungen. Diesen Effekt wird auch als Pasteur-Effekt bezeichnet, wo unter anaeroben Bedingungen Hefen und andere Mikroorganismen verstärkt Zucker abbauen, um den Energiegehalt innerhalb der Zelle aufrecht zu erhalten. \\
-		Der Crabtree-Effekt beschreibt das Betreiben von Gärung, selbst wenn Sauerstoff vorhanden ist. Das Betreiben von beiden Prozessen, sowohl Gärung als auch Atmung hilft der Hefe noch schneller Energie produzieren zu können und gleichzeitig andere Mikroorganismen wie konkurrierende Bakterien durch die Gärungsendprodukte wie Ethanol abtöten zu können. Dies erklärt möglicherweise den geringen Unterschied des Glukose Verbrauchs zwischen der aerob und anaerob gehaltenen Hefe während des Versuchs 1A. Bestätigen kann dieser Effekt aber nicht. Um den Crabtree-Effekt nachzuweisen, müsste der Ethanolgehalt im Medium gemessen werden.\\
-		Für uns Menschen ist der Prozess der aeroben Gärung (Crabtree-Effekt) ein wirtschaftlicher Faktor, der zum Genuss von alkoholischen Getränken wie Bier und Wein führt.\\
+		Wie in Table \ref{tab:Glucoseverbrauch} zu sehen, verbraucht Hefe unter anaeroben Bedingungen 1.15x mehr Glucose, als die unter aeroben Bedingungen. Dieser Effekt wird auch als Pasteur-Effekt bezeichnet, wo unter anaeroben Bedingungen Hefen und andere Mikroorganismen verstärkt Zucker abbauen, um den Energiegehalt innerhalb der Zelle aufrecht zu erhalten. \\
+		Der Crabtree-Effekt beschreibt das Betreiben von Gärung, selbst wenn Sauerstoff vorhanden ist. Das Betreiben von beiden Prozessen, sowohl Gärung als auch Atmung hilft der Hefe noch schneller Energie produzieren zu können und gleichzeitig andere Mikroorganismen wie konkurrierende Bakterien durch die Gärungsendprodukte wie Ethanol abtöten zu können. Dies erklärt möglicherweise den geringen Unterschied des Glukoseverbrauchs zwischen der aerob und anaerob gehaltenen Hefe während des Versuchs 1A. Laut Reaktionsgleichung wäre dieser nähmlich, unter anaeroben Bedingungen, ca. 18 mal so hoch, wie unter aeroben. Bestätigen kann dies den Effekt aber nicht. Um den Crabtree-Effekt nachzuweisen, müsste der Ethanolgehalt im Medium gemessen werden.\\
 		Die aerobe Atmung produziert circa 30-36 ATP-Moleküle/Glucose durch die Glycolysis, Citratzyklus und Atmungskette, während die anaerbe Atmung (Gärung) nur 2 ATP-Moleküle/Glucose produziert.\\
 		
 		\begin{equation}\nonumber
@@ -262,8 +266,8 @@
 		\begin{equation}\nonumber
 			Gärung \quad C_6H_{12}O_6 + 2 ADP + 2P_i \rightarrow 2 C_2H_5OH + 2 CO_2 + 2 ATP
 		\end{equation}
-	\\
-		Der Glucoseverbrauch die gemessen wurden, können von den realen Werten abweichen, da bei der Durchführung das Gefäß für die anaorobe Bedingung nicht komplett verschlossen war. Zudem wurden die Werte der Glucoseteststreifen zu Beginn nicht sofort abgelesen, weswegen die Farben über die Zeit dunkler wurden.
+		\\
+		Der Glucoseverbrauch der gemessen wurde, kann von den realen Werten abweichen, da bei der Durchführung das Gefäß für die anaorobe Bedingung nicht komplett verschlossen war. Zudem wurden die Werte der Glucoseteststreifen zu Beginn nicht sofort abgelesen, weswegen die Farben über die Zeit dunkler wurden.
 		
 		
 	\subsubsection{anaeorbe Gärung}	
