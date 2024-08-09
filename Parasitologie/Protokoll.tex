@@ -1,0 +1,114 @@
+\documentclass[oneside,10pt,a4paper]{report}
+\usepackage[a4paper, left=3cm, right=3cm, top=3cm, bottom=3cm, headsep=10mm, footskip=12mm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[ngerman, english]{babel}    % mehrsprachiger Textsatz
+% babel: letzte Sprache in Optionen zeigt die Sprache des Dokumentes
+% und kann durch den Befehl \selectlanguage{} geaendert werden
+% Passen Sie die Optionen des babel-Paketes nach Bedarf an!
+\usepackage{float}
+\usepackage{graphicx}
+\usepackage{url}
+\usepackage{pdflscape}
+\usepackage{mathtools}
+\usepackage{amssymb, amsmath, amstext}
+\usepackage{amsthm}
+\usepackage{xcolor}
+\usepackage{nameref}
+\usepackage{siunitx}
+\usepackage{makecell}
+\usepackage{hyperref}
+\usepackage{enumitem}
+\usepackage[superscript,biblabel]{cite}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{tabularx} 			% Tabellen erzeugen
+\usepackage{multirow}			 % Zeilen in Tabellenbearbeitung
+\usepackage{multicol} 			% Spalten in Tabellenbearbeitung 
+\usepackage{lmodern}                        % Ersatz fuer Computer Modern-Schriften 
+\usepackage{amsmath}                                           % zum besseren Aussehen am Bildschirm
+\usepackage{booktabs} % für schönere Tabellen
+\usepackage{sidecap}
+\usepackage{rotating} % für die Landscape-Umgebung
+\usepackage{afterpage}
+\definecolor{Bluetitle}{HTML}{1F3864}
+\definecolor{softbluetitle}{HTML}{274D7E}
+\definecolor{Greyish}{HTML}{5A5A5A}
+%\renewcommand{\refname}{Reference}
+\usepackage{array,multirow}
+\newcommand{\specialcell}[2][c]{%
+	\begin{tabular}[#1]{@{}c@{}}#2\end{tabular}}
+\usepackage{titlesec}
+
+\titleformat{\chapter}[display]
+{\normalfont\bfseries}{}{0pt}{\Huge}
+
+\usepackage{lipsum} 
+
+
+\begin{document}
+	
+	\begin{titlepage}
+		\begin{center}
+			\begin{figure}[h!tbp]
+				\includegraphics[width=\linewidth]{HUlogo.PNG}
+			\end{figure}
+			\vspace*{2 cm}
+			
+			\textcolor{Bluetitle}{\textbf{\huge Parasitologie - Praktikum}}\par
+			
+			\vspace*{2cm}
+			\textcolor{Greyish}{\textbf{Versuchsdurchführende}}\par
+			\textcolor{Greyish}{Huyen Anh Nguyen (572309)}\par
+
+			\vspace*{0.5cm}
+			\textcolor{Greyish}{\textbf{Versuchsort}}\par
+			\textcolor{Greyish}{Haus 14, Kursraum}\par
+			\textcolor{Greyish}{Gruppe 4}\par
+
+			
+			\vspace*{2 cm}
+			\textcolor{Greyish}{\textbf{Versuchsleiter}}\par
+			\textcolor{Greyish}{Prof. Dr. Kai Matuschewski}\par
+			\textcolor{Greyish}{\textbf{Versuchsbetreuer}}\par
+			\textcolor{Greyish}{Dr. Alexander Maier (ANU)}\par
+			\textcolor{Greyish}{Linnea Polito}\par
+			\textcolor{Greyish}{Grit Meusel}\par
+			\textcolor{Greyish}{Dr. Richard Lucius}\par
+			\textcolor{Greyish}{Peer Martin}\par
+			\textcolor{Greyish}{Manuel Rauch}\par
+			\textcolor{Greyish}{Dr. Katja Müller}\par
+			
+			
+			\textcolor{Greyish}{Abgabe 15. August 2024}\par
+			
+			
+			
+		\end{center}
+	\end{titlepage}
+
+	
+	\tableofcontents
+	\chapter{Note from the Author}
+	Das Protkoll st eine Collection von Einzelprotokolle der Versuchen, die in den Parasitologiepraktikum durchgeführt wurde.\\
+	Es wurden Methoden gezeigt, wie eine Spezies identifiziert, untersucht und dessen Verhalten analysiert werden kann.\\
+	
+	
+	In diesen Parasitologie-Praktikum wurden 4 verschiedene Methoden für die Quantifizierung und Qualifizierung von verschiedenen Parasitenarten vorgestellt.\\
+	Das Protokoll wird in 4 Hauptkapiteln unterteilt, die jeweils für sich individuell betrachtet werden,
+	\chapter{Genetische Speziesbestimmung mittels PCR des Hirudinea}	
+	\section{Einleitung}
+	
+	\section{Methode}
+	\section{Ergebnis}
+	\section{Diskusion}
+	
+	\chapter{Dichiotomische Bestimmung der Spezies des Hirudinea}
+	
+	\chapter{Trematoden}
+	
+	
+	\chapter{Plasmodium}
+	
+	
+	
+\end{document}
