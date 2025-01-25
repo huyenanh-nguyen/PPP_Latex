@@ -101,10 +101,10 @@
 	\chapter{Insertion mutagenesis using the transposable element T-Pop}	
 	
 		\section{Einleitung}
-		In diesen Experiment wird untersucht, wie viele Gene des Salmonella Chromosom durch die Insertion des T-POP-Transposon in seinem Salmonella-Stamm mit einem fljB-lac Fusion beeinflusst werden.\\
-		In den Salmonella Zellen sind die zwei Gene FljB und FliC (Klasse 3 - Proteine) für die Proteine der Filamente verantwortlich\cite{Flagellum}.
-		 Der Salmonella-Stanm für diesen Versuch besitzt in seinem fljB-Gen den Mud-lac-Operon, ein Fusionsgen. (MudJ besitzt ein Kanamycin-Resistenz Kassette fusioniert mit den lac-Operon, wobei hier der Kanamycin-Resistenz Kassette durch ein Chloramphenicol-Resistenz Kassette ersetzt wird.)
-		Das bedeutet, wenn das fljB-Gen exprimiert wird, wird zugleich auch der lac Operon mit exprimiert, da der lac Operon den fljB Promotor mitbenutzt.
+		In diesem Experiment wird untersucht, wie viele Gene des Salmonella-Chromosoms durch die Insertion des T-POP-Transposons in einem Salmonella-Stamm mit einer fljB-lac-Fusion beeinflusst werden.
+		In den Salmonella-Zellen sind die beiden Gene fljB und fliC (Klasse-3-Proteine) für die Proteine der Filamente verantwortlich\cite{Flagellum}.
+		 Der für diesen Versuch verwendete Salmonella-Stamm besitzt im fljB-Gen eine Mud-lac-Operon-Fusion. (Das MudJ-Element enthält eine Kanamycin-Resistenzkassette, die mit dem lac-Operon fusioniert ist, wobei die Kanamycin-Resistenzkassette durch eine Chloramphenicol-Resistenzkassette ersetzt wurde.)
+		 Das bedeutet, dass, wenn das fljB-Gen exprimiert wird, gleichzeitig auch das lac-Operon exprimiert wird, da das lac-Operon den fljB-Promotor nutzt.
 		
 		
 		\section{Methode}
@@ -117,7 +117,7 @@
 			\label{tab: exp2-biologisches Material}
 			\begin{tabular}{ccc}
 				\toprule
-				Biologisches Material& Stamm & Phänotyp\\
+				Biologisches Material& Stamm & Genotyp\\
 				\midrule
 				\multirow{2}{*}{P22 Phagen Lysat} & \multirow{2}{*}{TH3468} & \multirow{2}{*}{\parbox[t]{9cm}{F’128 (pro-lac) zzf-3834::Tn10dTc[del-20 del-25] (T-POP3) / proAB4}}\\
 				&&\\
@@ -157,10 +157,8 @@
 	
 	\chapter{The Luria-Delbrück fluctuation test}	
 		\section{Einleitung}
-		In diesen Versuch werden die Hypothese überprüft, ob Mutation adaptiv oder zufällig passiert.
-		Dabei werden zwei Salmonella-Stämme verwendet, ein Wildtyp und eine die eine Mutation in ihren DNA-Reperatursystem besitzt, und mit den Antibiotika Rifampicin behandelt. \\
-		Anhand der Anzahl von Kolonienbildenden Einheiten auf den Antibiotika-Platten wird die Mutationsereignis pro Kultur bestimmt und überprüft, ob die Mutation adaptiv oder zufällig passiert ist.
-		
+	In diesem Experiment wird die Hypothese überprüft, ob Mutationen adaptiv oder zufällig auftreten. Dazu werden zwei Salmonella-Stämme verwendet: ein Wildtyp-Stamm und ein Stamm mit einer Mutation im DNA-Reparatursystem. Beide Stämme werden mit dem Antibiotikum Rifampicin behandelt.\\
+	Anhand der Anzahl der koloniebildenden Einheiten auf den Antibiotika-Platten wird die Mutationsrate pro Kultur bestimmt und überprüft, ob die Mutationen adaptiv oder zufällig auftreten.
 		
 		\section{Methode}
 			\begin{table}[H]
@@ -169,7 +167,7 @@
 			\label{tab: exp4-biologisches Material}
 			\begin{tabular}{ccp{7.5cm}}
 				\toprule
-				Biologisches Material& Stamm & Phänotyp\\
+				Biologisches Material& Stamm & Genotyp\\
 				\midrule
 				\multirow{2}{*}{\parbox[t]{2cm}{Salmonella Wildtyp}}  & \multirow{2}{*}{EM7653} & \multirow{2}{*}{MvP103 sseC::aphT (Km$^R$) wildtype}\\
 				&&\\
@@ -236,14 +234,25 @@
 		\end{equation}
 		
 		Diese Rechnung wird für alle Gruppen gemacht und für den Mutantenstamm und dann den Mittelwert genommen.
+		Für den Wildtyp wurde eine Mutationsrate von  1.300$\cdot 10^{-9}$ und pro Cultur eine Mutationsereignis von 0.017 bestimmt, während für die Mutante  eine Rate von 2.479$\cdot 10^{-8}$ und Mutationsereignis pro Kultur von 0.312 bestimmt wurde. 
+		Zudem streuen die Werte an Kolonien zwischen den Platten sehr, da die meisten Koloien nur bei den Mutantenstämmen gezählt wurden, was eine hohe Varianz bedeutet und somit eher eine zufällige Mutation hindeutet.\\
+		\\
+		Leider wurde keine Photos von den Kulturen gemacht, das diese Aussage unterstützt. Bei einer Wiederholung des Versuches soll auch diese dokumentiert werden.
 		
 		\section{Diskussion}
+		
+		Wie in Tabelle \ref{tab: exp4-mutationrate} zu sehen ist, ist die Mutationsrate pro Kultur bei dem Mutantenstamm mit dem defekten DNA-Reparatursystem 17 Mal höher (0,312 Mutationen pro Kultur) als beim Wildtyp.
+		Selbst unter Selektionsdruck durch Antibiotika ist die Mutationsrate beim Wildtyp 19 Mal niedriger als bei den Mutanten.
+		In diesem Fall ist die Mutation nicht adaptiv, sondern erfolgt zufällig.
 	
 	\chapter{Phenotypic analysis of type-III protein secretion}
-	
-		\section{Analysis of protein secretion via the fT3SS in Salmonella mutants using SDS-PAGE and western blot}
-	
+		Das Experiment für die Untersuchung des Typ-III Sekretionssystem für den Aufbau von dem Flagellum der Salmonella und die Genexpression des Flagellumproteins wird hier in drei Teile durchgeführt.\\
+
+		\section{Part I: Analysis of protein secretion via the fT3SS in Salmonella mutants using SDS-PAGE and western blot}
+		
 		\subsection{Einleitung}
+		Die Salmonella-Bakterien verwenden das Typ-III-Sekretionssystem, um ihr Flagellum aufzubauen. Die hier verwendeten Stämme haben eine Mutation im Hin-Gen, sodass nur das Flagellumprotein FliC exprimiert werden kann, nicht jedoch die alternativen Flagellin-Proteine FljB und FljA, da das Hin-Gen nicht mehr invertierbar ist.\\
+		Die im Experiment verwendete Salmonella-Mutante hat eine Deletion im fliP-Gen, einem Bestandteil des fliPQR-Operons, welches die Typ-III-Pore formt. Die FliC-Expression wird zwischen dem Wildtyp und der Mutante verglichen, um festzustellen, ob FliC im Überstand oder in der Zelle zu finden ist.
 		
 		\subsection{Methode}
 			\begin{table}[H]
@@ -252,7 +261,7 @@
 				\label{tab: exp6-biologisches Material part1}
 				\begin{tabular}{ccp{7.5cm}}
 					\toprule
-					Biologisches Material& Stamm & Phänotyp\\
+					Biologisches Material& Stamm & Genotyp\\
 					\midrule
 					\multirow{2}{*}{\parbox[t]{2cm}{Salmonella Wildtyp}}  & \multirow{2}{*}{EM8016} & \multirow{2}{*}{\parbox[t]{7.5cm}{MvP103 sseC::aphT (Km$^R$) $\Delta$ hin5717::FRT (fliC-ON)}}\\
 					&&\\
@@ -272,13 +281,21 @@
 				\caption{WesternBlot vom Überstand und vom Pellet des Wildtyps EM8016 und Mutant 8035 nach einem SDS-PAGE. Banden wurden mit Antikörper für DnaK und FliC sichtbar gemacht. DnaK gilt hier als Kontrollprotein und hat eine Molekülgröße von 77kDa und FliC eine Größe von 55kDa.}
 				\label{fig: Westernblot}
 			\end{figure}
-			
+			Im Figure \ref{fig: Westernblot} ist eine Bande bei ~70 kDa im Pellet des Wildtypes zu erkennen und eine sehr schwache Bande bei der Mutante, die vom Antikörper DnaK gefärbt ist. Sonst sind keine weiteren Banden mehr erkennbar. FliC hat eine PRroteingröße von ~55 kDa was hier nicht zu erkennen ist.
 			
 			\subsection{Diskussion}
+			
+		In unserer Gruppe sowie in den Gruppen 4, 7 und 8 war keine Bande bei ~55 kDa sichtbar. Die Vermutung ist, dass die für die Färbung verwendete Antikörperlösung zu alt war und daher die Antikörper nicht mehr gebunden haben. Beide Blots wurden in einer Box mit derselben Antikörperlösung inkubiert. Die anderen Gruppen verwendeten eine frisch angesetzte Antikörperlösung. \\
+		Um diese Vermutung zu überprüfen, müsste der Versuch mit einer frisch angesetzten Antikörperlösung wiederholt werden.\\
+		Nichtsdestotrotz ist die Färbung des Kontrollproteins DnaK bei allen Proben nicht einheitlich. Ein Pipettierfehler könnte dafür verantwortlich sein, dass nur im Pellet des Wildtyps eine stark gefärbte Bande vorliegt und bei den anderen Proben nicht. DnaK dient als Kontrollprotein und soll als Marker für die gleiche Konzentration der Proben fungieren.
+			
 			
 		\section{Luciferase assay to measure gene expression}
 		
 			\subsection{Einleitung}
+			In diesem Experiment wird die Bedeutung des Proteins FlgE für den Aufbau des Flagellums untersucht. FlgE ist für die Bildung des Hooks verantwortlich, der das Verbindungsstück zwischen Basalkörper und Filament darstellt. Das Flagellum wird nur aufgebaut, wenn der Hook eine Länge von 55 nm erreicht hat. Das Typ-III-Sekretionssystem kontrolliert die Länge des Hooks und transportiert das Inhibitionsprotein FlgM aus der Zelle, sobald der Hook die 55 nm erreicht hat, sodass der $\sigma$-Promotor für die Flagellenproteine binden kann.\\
+			Die Gene für flhD (Klasse I), flhB (Klasse II) und motA (Klasse III) sind mit der Luciferase-Operon-Kassette gekoppelt, die bei Expression in Anwesenheit von Sauerstoff leuchten kann. Die hier verwendeten mutierten Salmonella-Stämme weisen Mutationen im FlgE-Gen auf und enthalten in den verschiedenen Stadien des Flagellumaufbaus die Luciferase-Kassette.
+			
 			
 			\subsection{Methode}
 				\begin{table}[H]
@@ -287,7 +304,7 @@
 				\label{tab: exp6-biologisches Material part2}
 				\begin{tabular}{ccp{7.5cm}}
 					\toprule
-					Biologisches Material& Stamm & Phänotyp\\
+					Biologisches Material& Stamm & Genotyp\\
 					\midrule
 					\multirow{2}{*}{\parbox[t]{2cm}{Salmonella Wildtyp 1 }}  & \multirow{2}{*}{EM8009} & \multirow{2}{*}{\parbox[t]{7.5cm}{pRG38 (P$_{flhD}$-luxCDABE; Tc$^R$)}}\\
 					&&\\
@@ -304,7 +321,7 @@
 					\multirow{3}{*}{\parbox[t]{2cm}{Salmonella Mutant 2}} & \multirow{3}{*}{EM8045} &\multirow{3}{*}{\parbox[t]{7.5cm}{$\Delta$flgE22964::FCF / pRG52 (P$_{flhB}$-luxCDABE; Tc$^R$)}} \\
 					&&\\
 					&&\\
-					\multirow{3}{*}{\parbox[t]{2cm}{Salmonella Mutant 3}} & \multirow{3}{*}{EM8043} &\multirow{3}{*}{\parbox[t]{7.5cm}{$\Delta$flgE22964::FCF / pRG19 (P$_{flhB}$-luxCDABE; Tc$^R$)}} \\
+					\multirow{3}{*}{\parbox[t]{2cm}{Salmonella Mutant 3}} & \multirow{3}{*}{EM8043} &\multirow{3}{*}{\parbox[t]{7.5cm}{$\Delta$flgE22964::FCF / pRG19 (P$_{motA}$-luxCDABE; Tc$^R$)}} \\
 					&&\\
 					&&\\
 					
@@ -312,7 +329,7 @@
 				\end{tabular}
 			\end{table}
 			
-			\section{Ergebnis}
+			\subsection{Ergebnis}
 			
 				\begin{figure}[H]
 				\centering
@@ -320,10 +337,20 @@
 				\caption{Luminiszenz-Verhältnis zu der Zelldichte im Vergleich von Wildtyp und Mutant.}
 				\label{fig: Lumi}
 			\end{figure}
+			In Figure \ref{fig: Lumi} ist bis auf bei FlhB eine Senkung der Luminiszenz zu erkennen. Bei FlhB ist die Luminiszenz gleich hoch bei der Mutante wie beim Wildtyp, wenn die Standardabweichung mit berücktsichtigt wird.
+			Mot A wurde bei der Mutante kaum exprimiert.
+			
+			\subsection{Diskussion}
+			Wenn FlgE nicht exprimiert wird, kann der Hook nicht die erforderliche Länge von 55 nm erreichen, wodurch der Inhibitor FlgM nicht aus der Zelle transportiert wird und somit die Klasse-III-Proteine nicht exprimiert werden können.\\
+			Bis zu den Klasse-II-Proteinen (also flhD und flhB) ist eine Expression messbar. Dass die FlhD-Lumineszenz bei den Mutanten fast halb so hoch ist, muss mit weiteren Versuchen noch einmal untersucht werden.\\
+			Die motA-Proteine können bei einem defekten FlgE nicht exprimiert werden, was in Abbildung \ref{fig: Lumi} zu sehen ist. Die Lumineszenz ist hier fast 20-fach niedriger.
 			
 		\section{Motility assay to analyze the swimmng behavor of Salmonella mutants}
 		
 			\subsection{Einleitung}
+			Hier wird das Motilitätsverhalten der Salmonella untersucht, indem die Bakterien in einen halbfesten Agarplatte inokuliert werden und den Halo vermessen wird, wie weit die Zellen geschwommen sind.
+			Die vier Salmonella-Mutantenstämme (Deletion in jeweils fliT-, fliS-, fliP- und fliC-Gen)werden mit dem Wildtyp verglichen.
+			Das fliT-Gen codiert für das positiver Regulator-Chaperon, fliS-Gen codiert für den fliC-Chaperon, fliP-Gen codiert für die Pore des Sekretionssystem und fliC ist das Flagellum-Protein.
 			
 			\subsection{Methode}
 				\begin{table}[H]
@@ -332,7 +359,7 @@
 				\label{tab: exp6-biologisches Material part3}
 				\begin{tabular}{ccp{5cm}}
 					\toprule
-					Biologisches Material& Stamm & Phänotyp\\
+					Biologisches Material& Stamm & Genotyp\\
 					\midrule
 					\multirow{3}{*}{\parbox[t]{2cm}{Salmonella Wildtyp }}  & \multirow{3}{*}{EM8016} & \multirow{3}{*}{\parbox[t]{4.5cm}{MvP103 sseC::aphT (Km$^R$) $\Delta$hin5717::FRT (fliC-ON)}}\\
 					&&\\
@@ -371,11 +398,15 @@
 				\label{fig: Motilitychart}
 			\end{figure}
 			
+			Der Wildtyp und die Mutante EM8033 mit den deletierten fliT-Gen zeigen im Agar ein großes Halo (siehe Figure \ref{fig: Motilitybild}) Die Motilität dieser Stämme betrug auch 88 $\pm 3.5\%$ vom Wildtyp. Bei den anderen Stämme wurde ein Halodurchmesser von circa ~10$\pm 4.7\%$ vom Wildtyps gemessen.
+			
 			\subsection{Diskussion}
-		
+			Die Deletion der Gene fliS, fliP und fliC in den Salmonella-Zellen beeinflusst die Motilität der Zellen erheblich. Wie in den Abbildungen \ref{fig: Motilitybild} und \ref{fig: Motilitychart} zu sehen ist, gibt es kein Halo an der Inokulationsstelle der Stämme EM8034 ($\Delta$fliS), EM8035 ($\Delta$fliP) und EM8036 ($\Delta$fliC). Beim Stamm EM8033 ($\Delta$fliT) ist jedoch ein Halo zu erkennen, was darauf hindeutet, dass eine Deletion des fliT-Gens keinen großen Einfluss auf den Flagellumaufbau hat.
 		
 	\chapter{Dissecting the regulatory mechanism of an unknown flagellar regulator}
 		\section{Einleitung}
+		In diesem Experiment wurde eine fliL::MudJ-Kassette sowohl in den Wildtyp- als auch in den Mutantenstamm eingefügt. Das MudJ-Element ist ein Lac-Fusionsprotein, dessen Expression mithilfe des ß-Galactosidase-Substrats o-Nitrophenyl-ß-D-galactosid photometrisch gemessen werden kann.
+		Der Mutantenstamm weist eine Deletion in einem Regulator auf, dessen Einfluss auf die Regulation der Flagellenproduktion in diesem Experiment untersucht werden soll.
 		
 		\section{Methode}
 			\begin{table}[H]
@@ -384,7 +415,7 @@
 			\label{tab: exp8-biologisches Material}
 			\begin{tabular}{ccp{5cm}}
 				\toprule
-				Biologisches Material& Stamm & Phänotyp\\
+				Biologisches Material& Stamm & Genotyp\\
 				\midrule
 				\multirow{3}{*}{\parbox[t]{2cm}{Salmonella Wildtyp }}  & \multirow{3}{*}{EM8017} & \multirow{3}{*}{\parbox[t]{5cm}{fliL23026::MudJ-Cm (Km$^R$ in MudJ replaced by FCF = Cm$^R$)}}\\
 				&&\\
@@ -398,9 +429,37 @@
 		\end{table}
 		
 		\section{Ergebnis}
+			\begin{table}[H]
+			\centering
+			\caption{Miller Units vom WIldtyp 8017 und Mutant EM9900 der einzelnen Gruppen und ob durch die Deletion des $\Delta$mutS einen Up-oder Down regulation gemessen wurde.}
+			\label{tab: exp8-millerunits}
+			\begin{tabular}{cccc}
+				\toprule
+				Gruppe& WT (EM8017) & $\Delta$mutS (EM9900)& up/down\\
+				\midrule
+				1 & 813.65 & 583.12& down\\
+				2 & 355.75 & 716.73 & up\\
+				3 & 6.25 & 799.80 & - \\
+				4 & 751.91 & 827.44 & up\\
+				5 & 582.10 & 692.40 & up\\
+				6 & 529.00 & 1062.0 & up\\
+				7 & 1077.08 & 1054.04 & down\\
+				8 & 811.18 & 663.10 & down\\
+				\bottomrule			
+			\end{tabular}
+		\end{table}
 		
+		Es wurden 3 Downregulation und 4 Upregulation gemessen und somit eine Overall Upregulation festgestellt. Gruppe 3 wurde aus der Zählung rausgenommen durch die starke Abweichende Messungen.\\
+		Die Millerunits wurde mit der Gleichung (\ref{eq: Millerunits}) bestimmt. Die Absorbtion der Probe bei $\lambda$ = 420nm und die Zelldichte bei $\lambda$ = 620nm wurde hier eingesetzt.
+		Das Volumen v der im Assay verwendete Kulturvolumen beträgt 20 $\mu$L und die Reaktionszeit in Minuten wurde individuell von jede Gruppe aufgenommen. Für die Gruppe 3 wurde eine Reaktionszeit von 17 min für die Mutante und 31 min für den Wildtyp aufgenommen.
+		
+		\begin{equation}\label{eq: Millerunits}
+			Millerunits = 1000 \cdot \frac{Abs_{420}}{OD_{600}} \cdot v \cdot t
+		\end{equation}
 		\section{Diskussion}
-
+		Da die meisten eine Upregulation gemessen haben, wird vermutet, dass es sich bei den $\Delta$mutS um einen Up-Regulator handelt. Es ist jedoch schwer zu beurteilen, ob die Mehrheit wirklich eine Upregulation messen würde. Der Versuch müsste mit mehr Replikaten wiederholt werden.\\
+		Die Versuchsbetreuerin enthüllte, dass der Regulator RflP deletiert wurde, ein negativer Regulator für FlhDC. Wenn dieser Regulator ausgeschaltet wird, dann wird der RflM-Regulator stärker exprimiert, was die Expression der Klasse-I-Proteine inhibiert. Dennoch können Klasse-II-Proteine exprimiert werden, weswegen FliL mit der MudJ-Kassette exprimiert werden kann und der ß-Galactosidase-Test positiv ausfällt.\\
+		Bei der Gruppe 3 könnten die Mutationsstämme mit den Stämmen aus dem Versuch "Analysis of phenotypic heterogeneity by single-cell fluorescence microscopy" (siehe Abschnitt 7) vertauscht worden sein, da auch dort keine Ergebnisse gemessen werden konnten.
 	
 	
 	\chapter{Anhang}
